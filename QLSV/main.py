@@ -6,12 +6,15 @@ Minh họa OOP
 class Student:
     # Thuộc tính tĩnh chứa tổng số SV được tạo ra
     totalCount = 0
-    # Phương thức khởi tạo
+    _uniName = "HUST"
+       # Phương thức khởi tạo
     def __init__(self, id, name, grade):
         self.id = id
         self.name = name
         self.grade = grade
-    # Pương thức in thông tin SV
+        Student.totalCount += 1
+
+        # Pương thức in thông tin SV
     def DisplayInfo(self):
         print("Student ID:", self.id)
         print("Student Name:", self.name)
@@ -30,3 +33,13 @@ if __name__ == '__main__':
     #
     student2 = Student("65123456", "Julian", 7.89)
     print(student2.ToString)
+    print(f"Student Total: {Student.totalCount}")
+
+    # Create a list of students
+    studentList = [student1, student2]
+    for sv in studentList:
+        print(sv.ToString)
+
+    print(student2._uniName)
+
+
