@@ -17,12 +17,16 @@ class Student:
         print("Student Name:", self.name)
         print("Student Grade:", self.grade)
     # Nạp chồng phương thức
+    @property
     def ToString(self):
         return (f"{self.id}\t{self.name}\t{self.grade}")
 
 # Chương trình chính
-if __name__ == 'main':
+if __name__ == '__main__':
     # Khởi tạo đô tượng sinh viên
-    student = Student("65133958", "trongdepzai", 8.56)
+    student1 = Student("65133958", "trongdepzai", 8.56)
     # student.DisplayInfo()
-    print(student.ToString())
+    print(student1.ToString)
+    #
+    student2 = Student("65123456", "Julian", 7.89)
+    print(student2.ToString)
