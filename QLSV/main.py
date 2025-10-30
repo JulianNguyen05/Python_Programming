@@ -43,3 +43,6 @@ if __name__ == '__main__':
     print(student2._uniName)
 
 
+if __name__ == '__main__':
+    primeNums = [i for i in range(100)]
+
