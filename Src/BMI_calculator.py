@@ -6,9 +6,9 @@ def phan_loai_bmi(bmi):
     """Hàm trả về đánh giá và màu sắc dựa trên chỉ số BMI"""
     if bmi < 18.5:
         return "Thiếu cân (Gầy)", "#f1c40f" # Màu vàng cam
-    elif 18.5 <= bmi < 24.9:
+    elif 18.5 <= bmi < 23:
         return "Bình thường (Khỏe mạnh)", "#2ecc71" # Màu xanh lá
-    elif 25 <= bmi < 29.9:
+    elif 23 <= bmi < 30:
         return "Thừa cân", "#e67e22" # Màu cam
     else:
         return "Béo phì", "#e74c3c" # Màu đỏ
